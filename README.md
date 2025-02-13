@@ -1,12 +1,12 @@
-# Домашнее задание к занятию "`Резервное копирование`" - `Фумелли Петр`
+# Домашнее задание к занятию "`Резервное копирование`"
 
 ### Задание 1
 
-![alt text](https://github.com/PeterFumelli/recovery/blob/main/img/rsync.png)
+![alt text](img/1.png)
 
 ### Задание 2
 
-![alt text](https://github.com/PeterFumelli/recovery/blob/main/img/crontab.png)
+![alt text](img/2.png)
 
 
 ```
