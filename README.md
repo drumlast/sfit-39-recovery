@@ -12,20 +12,14 @@
 ```
 #!/bin/bash
 
-# Директория для резервного копирования
-SOURCE=~
 DESTINATION=/tmp/backup
 
-# Создаем директорию назначения, если её нет
 mkdir -p "$DESTINATION"
 
-# Лог-файл
 LOGFILE=/var/log/backup.log
 
-# Выполняем rsync и записываем результат в лог
 rsync -aHAX --checksum --exclude='.*' "$SOURCE/" "$DESTINATION/" > "$LOGFILE" 2>&1
 
-# Проверяем успешность выполнения
 if [ $? -eq 0 ]; then
   echo "$(date): Backup completed successfully." >> "$LOGFILE"
 else
